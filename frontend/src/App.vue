@@ -1,41 +1,26 @@
 <template>
-  <div>
-    <div v-for="song in info" v-bind:key="song.Song_ID" id="articles">
-          <div class="article-title">
-              {{ song.Song_Name }}
-          </div>
+    <div>  
+        <BG/>
+        <Portrait/>
+        <SongList/>
+        
     </div>
-  </div>
 </template>
 
 <script>
-    import axios from 'axios';
-
+    import Portrait from './components/Portrait.vue'
+    import SongList from './components/SongList.vue'
+    import BG from './components/bg.vue'
     export default {
         name: 'App',
-        data: function () {
-            return {
-                info: '',
-            }
-        },
-        mounted() {
-            axios
-                .get('/api/song')
-                .then(response => (this.info = response.data))
-        },
+        components: { Portrait, SongList, BG}
     }
 </script>
 
 <style>
-    #articles {
-        padding: 10px;
-    }
-
-    .article-title {
-        font-size: large;
-        font-weight: bolder;
-        color: black;
-        text-decoration: none;
-        padding: 5px 0 5px 0;
+    #app {
+        font-family: Georgia, Arial, sans-serif;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 </style>
