@@ -28,6 +28,7 @@ class Songs(models.Model):
         (24,"X"),
         (25,"Y"),
         (26,"Z"),
+        (27,"Others"),
     )
     Song_ID = models.AutoField('Song_ID',db_column='Song_ID',primary_key=True)
     Song_Name = models.CharField('Song_name',db_column='Song_Name',max_length=255,null=False,unique=True)
