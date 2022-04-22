@@ -5,8 +5,7 @@
             <Portrait/>       
         </div>
         <div class = "body_container">  
-            <!-- <Portrait/>        -->
-            <!-- <SongList/> -->
+            <SongList/>
         </div>
     </div>
 </template>
