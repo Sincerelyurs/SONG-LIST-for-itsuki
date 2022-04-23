@@ -1,13 +1,7 @@
 <template>
-      <el-row class="flex__container">
-    <el-col :span="12">
-      <div class="demo-basic--circle">
-        <div class="block"><el-avatar :size="300" :src="circleUrl"></el-avatar></div>
-      </div>
-    </el-col> 
-  </el-row>
-
-  
+  <div class="box1">
+    <el-avatar :size="300" :src="circleUrl"></el-avatar>
+  </div>
 </template>
 <script>
   export default {
@@ -21,17 +15,13 @@
 </script>
 
 <style scoped>
-    .flex__container {
-    display: flex;
-
-    position: absolute;
-
-    transform: translate(12%, -50%);
-
-    justify-content: center;
-
-    align-items: center;
-
-    width: 100%;
+    .demo-basic--circle {
+      margin: 0 auto;
     }
+    .box1 {
+      height: 300px;
+      width: 300px;
+      margin: 0 auto;
+    }
+
 </style>

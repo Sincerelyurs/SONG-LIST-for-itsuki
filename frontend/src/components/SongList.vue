@@ -1,7 +1,5 @@
 <template>
   <div>
-    <span>这里是星谷樹itsuki的歌单,点击即可复制歌名到直播间点歌啦！</span>
-    <el-divider></el-divider>
     <el-row>
     <el-col :span="4"><div class="grid-content bg-purple"><el-button type="primary" plain @click="OnClick(0)" style="width:100%;background: #ffccff;">全部</el-button></div></el-col>
     <el-col :span="4"><div class="grid-content bg-purple"><el-button type="primary" plain @click="OnClick(1)" style="width:100%;background: #99ffcc;">国语</el-button></div></el-col>

@@ -1,10 +1,15 @@
 <template>
     <div>
         <BG/>
-        <div class = "flex__container">  
+        <div class = "box1">  
             <Portrait/>       
         </div>
-        <div class = "body_container">  
+
+        <div class = "box2">
+            <Infomation/>
+        </div>
+
+        <div class = "box3">  
             <SongList/>
         </div>
     </div>
@@ -14,43 +19,31 @@
     import Portrait from './components/Portrait'
     import SongList from './components/SongList'
     import BG from './components/bg'
+    import Infomation from './components/infomation'
     export default {
         name: 'App',
-        components: { Portrait, SongList, BG}
+        components: { Portrait, SongList, BG, Infomation }
     }
 </script>
 
 <style>
-    #app {
+    /* #app {
         font-family: Georgia, Arial, sans-serif;
         margin-left: 60px;
         margin-right: 60px;
-    }
-    .flex__container {
-        justify-content: center;
-
-        align-items: center;
-
-        width: 100%;
-
-        top: 25%;
-
-        left:5%;
+    } */
+    .box1 {
+        margin:0 auto;
     }
 
-    .body_container{
-        /* display: flex; */
-
-        justify-content: center;
-
-        align-items: center;
-
+    .box2 {
+        margin:0 auto;
         width: 80%;
+    }
 
-        position: absolute;
-
-        top: 75%;
-
-        transform: translate(12%, -50%);
+    .box3{
+        /* display: flex; */
+        margin:0 auto;
+        width: 80%;
     }
 </style>

@@ -6,7 +6,7 @@
 
 <script>
  export default {
-        name: 'BG'
+        name: 'BG',
     }
 
 </script>
@@ -14,7 +14,7 @@
 <style>
     .loginbg{
         width: 100%;
-        height:1000px;
+        height:100000px;
         overflow: hidden;
         position: absolute;
         top: 0;
@@ -23,4 +23,5 @@
     .loginbg img{
         width: 100%;
     }
+
 </style>
