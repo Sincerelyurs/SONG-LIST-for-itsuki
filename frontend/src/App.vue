@@ -38,12 +38,12 @@
 
     .box2 {
         margin:0 auto;
-        width: 80%;
+        width: 60%;
     }
 
     .box3{
         /* display: flex; */
         margin:0 auto;
-        width: 80%;
+        width: 60%;
     }
 </style>

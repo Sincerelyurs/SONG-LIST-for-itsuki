@@ -1,5 +1,6 @@
 <template>
   <div class="box1">
+    <br/><br/>
     <el-avatar :size="300" :src="circleUrl"></el-avatar>
   </div>
 </template>

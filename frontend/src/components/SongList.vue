@@ -6,12 +6,13 @@
     <el-col :span="4"><div class="grid-content bg-purple"><el-button type="primary" plain @click="OnClick(2)" style="width:100%;background: #66ffff;">英语</el-button></div></el-col>
     <el-col :span="4"><div class="grid-content bg-purple"><el-button type="primary" plain @click="OnClick(3)" style="width:100%;background: #00FA9A;">日语</el-button></div></el-col>
     <el-col :span="4"><div class="grid-content bg-purple"><el-button type="primary" plain @click="OnClick(4)" style="width:100%;background: #ffff99;">粤语</el-button></div></el-col>
-    <el-col :span="4"><div class="grid-content bg-purple-light"><el-select v-model="value" clearable placeholder="请选择歌曲首字母"><el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>=</el-select></div></el-col>
+    <el-col :span="4"><div class="grid-content bg-purple-light"><el-select v-model="value" clearable placeholder="请选择歌曲首字母" style="width:100%;"><el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option></el-select></div></el-col>
     </el-row>
     <el-input type = "test" v-model="keyword" placeholder="请输入歌名或歌手名"></el-input>
-    <el-table :data="searchList" border style="width: 100%" @row-click="handle">
-        <el-table-column prop="Song_Name" label="歌名" width="180"></el-table-column>
-        <el-table-column prop="Singer" label="歌手" width="180"></el-table-column>
+    <el-divider></el-divider>
+    <el-table :data="searchList" :header-cell-style="{ background: '#0e192a', color: '#6666EE' }" :row-style="{ background: '#D9EFCB' }" @row-click="handle">
+        <el-table-column prop="Song_Name" label="歌名" width="300px"></el-table-column>
+        <el-table-column prop="Singer" label="歌手" width="240px"></el-table-column>
         <el-table-column prop="Language" label="语言"></el-table-column>
         <el-table-column prop="Remark" label="备注"></el-table-column>   
     </el-table>
@@ -229,7 +230,7 @@
                 const h = this.$createElement;
                 this.$notify({
                 title: '复制成功',
-                message: h('i', { style: 'color: teal'}, '成功复制' + "“" + row.Song_Name + "”" + '到剪切板，快去直播间点歌吧！')
+                message: h('i', { style: 'color: teal'}, '成功复制' + "“" + row.Song_Name + "”" + '到剪切板，快戴上五级牌子到直播间点歌吧！')
                 });
             },
             OnSelect(val){
@@ -248,7 +249,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     #articles {
         padding: 10px;
     }
