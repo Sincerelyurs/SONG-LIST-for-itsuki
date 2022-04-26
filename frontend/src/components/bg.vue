@@ -1,9 +1,11 @@
 <template>
     <div class="loginbg">
-        <img src="../assets/2.png">
-        <img src="../assets/2.png">
-        <img src="../assets/2.png">
-        <img src="../assets/2.png">
+        <img src="../assets/3.png">
+        <img src="../assets/3.png">
+        <img src="../assets/3.png">
+        <img src="../assets/3.png">
+        <img src="../assets/3.png">
+        <img src="../assets/3.png">
     </div>
 </template>
 
@@ -17,7 +19,7 @@
 <style>
     .loginbg{
         width: 100%;
-        height:10000px;
+        height:12000px;         /* 背景图片高度 */
         overflow: hidden;
         position: absolute;
         top: 0;
