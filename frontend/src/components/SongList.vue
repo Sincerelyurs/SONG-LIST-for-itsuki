@@ -250,17 +250,6 @@
 </script>
 
 <style lang="scss" scoped>
-    #articles {
-        padding: 10px;
-    }
-
-    .article-title {
-        font-size: large;
-        font-weight: bolder;
-        color: black;
-        text-decoration: none;
-        padding: 5px 0 5px 0;
-    }
     .el-button{
         background: #535355;
         border-color: #9c9df1;

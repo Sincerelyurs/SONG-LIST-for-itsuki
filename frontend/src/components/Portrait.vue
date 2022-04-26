@@ -16,9 +16,6 @@
 </script>
 
 <style scoped>
-    .demo-basic--circle {
-      margin: 0 auto;
-    }
     .box1 {
       height: 300px;
       width: 300px;
