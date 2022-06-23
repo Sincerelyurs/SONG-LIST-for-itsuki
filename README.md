@@ -13,12 +13,7 @@
 
 ***
 
-用到了npm, 是Node.js官方提供的包管理工具。如果运行环境没有Node.js，请先上[官网](https://nodejs.org
-#page {
-  background-color: rgb(185, 246, 225);
-  min-height: 2000px;
-  margin: 0;
-})下载，安装一路next就好。
+用到了npm, 是Node.js官方提供的包管理工具。如果运行环境没有Node.js，请先上[官网](https://nodejs.org)下载，安装一路next就好。
 
 
 
