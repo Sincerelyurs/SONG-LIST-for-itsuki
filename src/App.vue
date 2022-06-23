@@ -1,10 +1,12 @@
 <template style="margin: 0 0;">
   <div id="page">
     <el-container>
+      <!-- 页首 -->
       <slheader />
       <!-- <el-header id="header"><h1>小树的歌单</h1></el-header> -->
       <el-main>
         <div id="avatar" style="height: 200px; width: 200px; margin: 0 auto">
+          <!-- 头像 -->
           <el-avatar
             :size="200"
             :src="circleUrl"
@@ -12,6 +14,7 @@
           ></el-avatar>
         </div>
         <el-divider content-position="center">挑个喜欢的类型吧~</el-divider>
+        <!-- 按钮组 -->
         <div id="div0">
           <div>
             <el-button type="primary" id="b1" @click="OnClick(0)"
@@ -72,6 +75,7 @@
               ></el-select></div
           ></el-col>
         </el-row>
+        <!-- 歌单列表 -->
         <el-table
           :data="searchList"
           :header-cell-style="{ background: '#0e192a', color: '#6666EE' }"
@@ -99,6 +103,7 @@
           <el-table-column prop="remark" label="备注"></el-table-column>
         </el-table>
       </el-main>
+      <!-- 页脚 -->
       <el-footer id="footer">Copyright © 2022 🌲树喵窝🌲</el-footer>
     </el-container>
   </div>
@@ -113,10 +118,11 @@ export default {
   components: { slheader, slfooter },
   data() {
     return {
-      circleUrl: "https://s3.bmp.ovh/imgs/2022/05/18/1dd3c6637527dd35.png",
-      keyword: "",
+      circleUrl: "https://s3.bmp.ovh/imgs/2022/05/18/1dd3c6637527dd35.png", //头像地址，需要先上传图床
+      keyword: "", // 搜索框关键字
       searchList: [],
       message: "copy me",
+      /* 歌曲信息 */
       totalList: [
         {
           songID: 1,
@@ -2215,6 +2221,7 @@ export default {
           remark: "",
         },
       ],
+      /* 首字母下拉框选项 */
       options: [
         { value: 1, label: "全部" },
         { value: 2, label: "A" },
@@ -2245,7 +2252,7 @@ export default {
         { value: 27, label: "Z" },
         { value: 28, label: "其他语言" },
       ],
-      value: "",
+      value: "", //首字母关键字
     };
   },
   methods: {
